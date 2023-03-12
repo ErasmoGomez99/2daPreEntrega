@@ -1,0 +1,35 @@
+/*Cambio de Fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital@1&display=swap');
+/*Ajuste de Tamaño del Fondo Principal*/
+.imagenfondoprincipal {
+    height: 78vh;
+    width: 205vh;
+background-image: url(../Assets/Imagenes/Fondo\ Web.jpg);    
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+/*Aplicasion de Fuente al Sitio*/
+.fuente {
+    font-family: 'Shantell Sans', cursive; 
+
+}
+/*Ajuste del Titulo Principal*/
+.h1principal {
+    font-size: 30px;
+}
+/*Cambio en los Ajustes de naegacion*/
+.listanav {
+    list-style: none;
+}
+.nav{
+    list-style: none;
+    text-decoration: none;
+
+}
+/*Ajuste del 2doFondo Web*/
+.fondoweb_2{
+    background-position: center;
+    height: 78vh;
+    width: 205vh;
+}
