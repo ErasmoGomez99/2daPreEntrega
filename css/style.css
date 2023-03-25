@@ -1,31 +1,97 @@
 /*Cambio de Fuente*/
 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital@1&display=swap');
 /*Ajuste de Tamaño del Fondo Principal*/
-.imagenfondoprincipal {
-    height: 78vh;
-    width: 205vh;
-background-image: url(../Assets/Imagenes/Fondo\ Web.jpg);    
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-}
-/*Aplicasion de Fuente al Sitio*/
-.fuente {
-    font-family: 'Shantell Sans', cursive; 
 
+/*Aplicasion de Fuente al Sitio*/
+.fuente{
+    margin:auto;
+    padding: auto;
+    font-family: 'Shantell Sans', cursive; 
+    background-color: bisque;
 }
 /*Ajuste del Titulo Principal*/
 .h1principal {
+    font-size: 50px;
+    background-color: bisque;
+    text-align: center;
+
+  }
+  /*Ajustes del 2do Grupo_contenido visual*/
+ .galeria_fotos{
+    margin-top: 10px;
+ }
+ .galeria_fotos img{
+    height: 85vh;  
+ }
+ .ancla_c{
     font-size: 30px;
-}
+    text-decoration: none;
+    color: rgb(131, 243, 243)
+    
+ }
+ .parrafo_c{
+    color:  rgb(131, 243, 243);
+    font-size: 40px;
+ }
 /*Cambio en los Ajustes de naegacion*/
+.navegacion{
+    height: 45px;
+    width: 100%;
+    background-color: rgb(131, 243, 243)
+}
+.box{
+    height: 100%;
+    
+}
+.box:hover{
+    background-color: bisque;
+}
 .listanav {
     list-style: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
 }
 .nav{
     list-style: none;
     text-decoration: none;
-
+    margin-left: 5px;
+    padding: 8px 8px 8px 8px
+}
+main{
+    background-color: rgb(175, 156, 133);
+    
+}
+/*3er Grupo*/
+.noticias{
+    background-color: bisque;
+    margin-top: 20px;
+    height: 160px;
+}
+.h2principal{
+    font-size: 40px;
+    text-align: center;
+}
+.hprincipal{
+    font-size: 32px;
+}
+/*Redes Sociales*/
+.footer {
+margin: 10px 10px 10px 10px;
+    background-color: rgb(175, 156, 133);
+}
+.link_redes{
+    justify-content: center;
+    text-align: center;
+    
+}
+.footer-a{
+    text-decoration: none;
+    justify-content: space-between;
+    margin-left: 180px;
+    margin-right: 180px;
 }
 /*Ajuste del 2doFondo Web*/
 .fondoweb_2{

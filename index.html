@@ -6,32 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Macetas Personalizadas</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="./favicom.ico" tipe="Imag/x-icon">
     <link rel="stylesheet" href="./Css/Style.css">
 </head>
  <!--Fondo Principal de mi Pagina-->
-<div>
-    <img class=imagenfondoprincipal src="./Assets/Imagenes/Fondo Web.jpg" alt="Logo de Macetas Personalizadas">
-</div>
+
  <!--El Contenido de mi Pagina-->
 <body class="fuente">
      <!--Contenido Principal-->
     <header>
-        <!--Navegacion de mi sitio-->
-        <nav>
-            <ul class="listanav">
-                <li><a class="nav" href="#">Inicio</a></li>
-                <li><a class="nav" href="./Pages/Mas de Nosotros.html">Mas de Nosotros</a></li>
-                <li><a class="nav"href="./Pages/Arma tu Pedido.html">Arma tu Pedido</a></li>
-                <li><a class="nav" href="./Pages/Nuestra Ubicacion.html">Nuestra Ubicacion</a></li>
-                <li><a class="nav"href="./Pages/Imagenes del Producto.html">Imagenes de Nuestros Productos</a></li>
-            </ul>
-        </nav>
+        <!--Navegacion de mi sitito-->
+    <nav class="p-2"> 
+        <div class="row">
+            <div class="conteiner-fluid navegacion">
+                <div>
+                    <ul class="nav justify-content-end listanav">
+                            <li class="nav-item box">
+                                <a class="nav" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item box">
+                                <a class="nav" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item box">
+                                <a class="nav" href="./pages/arma tu pedido.html">Arma tu Pedido</a>
+                            </li>
+                            <li class="nav-item box">
+                                <a class="nav" href="./pages/ubicacion.html">Ubicacion</a>
+                                <li>
+                            <li class="nav-item box">
+                                <a class="nav" href="./pages/nuestros productos.html">Nuestros Productos</a>
+                            </li>
+                    </ul>
+                </div>    
+            </div>
+        </div>
+    </nav>    
     </header>
     <!--Contenido Principal-->
-        <main>
+        <main class="container main">
             <!--1er Grupo-->
-            <section>
+            <section class="row ">
                 <!--Titulo Principal y contenido-->
                 <h1 class="h1principal">Personaliza tu Maceta a tu Gusto!</h1>
                 <p class="parrafoprincipal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor tempore veniam maiores consequatur doloribus minima suscipit dolorum corrupti libero nisi numquam amet, exercitationem sit esse ducimus rem beatae quod reprehenderit!
@@ -40,67 +55,74 @@
                 <p class="parrafosecundario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quisquam debitis odio iure repudiandae, repellat voluptas at suscipit. Officia ut in, quam ipsum molestiae officiis cumque repellat velit sint perferendis!</p>
             </section>
             <!--2do Grupo_Contenido Visual-->
-            <section>
+            <section class="row">
                     <h3>Algunos diseños que te van a gustar!</h3>
-                        <img src="./Assets/Imagenes/Maceta_1.jpg" alt="macetaproducto_1">
-                        <img src="./Assets/Imagenes/Maceta_2.jpg" alt="">
-                        <img src="./Assets/Imagenes/Maceta_3.jpg" alt="">
-                        <img src="./Assets/Imagenes/Maceta_4.jpg" alt="">
-                        <img src="./Assets/Imagenes/Maceta_5.jpg" alt="">
+                    <div id="carouselExampleCaptions" class="carousel slide galeria_fotos" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>                   
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/images/Maceta_10.jpg" class="d-block w-100 galeria_fotos" alt="producto_m10">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <a class="ancla_c" href="./pages/arma tu pedido.html">Producto cod-mp-10</a>
+                                        <p class="parrafo_c">Some representative placeholder content for the first slide.</p>
+                                    </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/Maceta_2.jpg" class="d-block w-100 galeria_fotos" alt="producto_m2">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <a class="ancla_c" href="./pages/arma tu pedido.html">Producto cod-mp-2</a>
+                                        <p class="parrafo_c">Some representative placeholder content for the second slide.</p>
+                                    </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/Maceta_5.jpg" class="d-block w-100 galeria_fotos" alt="producto_m8">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <a class="ancla_c" href="./pages/arma tu pedido.html">Producto cod-mp-8</a>
+                                        <p class="parrafo_c">Some representative placeholder content for the third slide.</p>
+                                    </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/Maceta_4.jpg" class="d-block w-100 galeria_fotos" alt="producto_m4">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <a class="ancla_c" href="./pages/arma tu pedido.html">Producto cod-mp-4</a>
+                                        <p class="parrafo_c">Some representative placeholder content for the third slide.</p>
+                                    </div>
+                            </div>
+                        </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                    </div>
             </section>
             <!--3er Grupo_Noticias del Sitio-->
-            <section>
-                <h2>Noticias Relacionadas del Mundo Verde</h2>
+            <section class="noticias">
+                <h2 class="h2principal">Noticias Relacionadas del Mundo Verde</h2>
                 <!--Noticia Independiente-->
                 <article>
-                    <h1>La Municipalidad de Cordoba Planta 10000 Arboles</h1>
+                    <h1 class="hprincipal">La Municipalidad de Cordoba Planta 10000 Arboles</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut accusantium error possimus dolores amet nulla corporis quidem, quos consequatur ab quae corrupti itaque ratione saepe minima cumque in aliquid!</p>
                 </article>
             </section>
         </main>
         <!--Pie de Pagina_Redes Sociales-->
-        <footer>
-    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com/" target="_blank">facebook</a>
-    <a href="https://web.whatsapp.com/" target="_blank">whatsapp</a>
-        </footer>
+        <footer class="container-fluid-center footer">
+            <div class="link_redes">
+                <a class="footer-a" href="https://www.instagram.com/" target="_blank"><img src="./assets/images/instagram (3).svg" alt="Instagram"></a>
+                <a class="footer-a" href="https://www.facebook.com/" target="_blank"><img src="./assets/images/facebook.svg" alt="Facebook"></a>
+                <a class="footer-a" href="https://web.whatsapp.com/" target="_blank"><img src="./assets/images/phone.svg" alt="Whatsapp"></a>
+            </div>
+        <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
